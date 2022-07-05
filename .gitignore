@@ -1,0 +1,44 @@
+# Log file
+*.log
+
+# VSCode files
+.vscode/
+
+# Intellij IDEA config files
+.idea/
+
+# Package Files #
+*.zip
+*.tar.gz
+*.rar
+*.egg-info
+
+# Keep empty data folders
+data/*
+
+# PG database
+.pgdata
+
+# Python temporary files
+__pycache__/
+
+# Python tests cache
+.pytest_cache/
+
+# Python generated coverage directories/files
+.coverage
+coverage/
+htmlcov/
+
+# local developer utils
+utils/*
+
+# local settings
+.env
+.venv
+local.env
+
+!/**/.gitkeep
+
+# MacOS dir metadate
+.DS_store
