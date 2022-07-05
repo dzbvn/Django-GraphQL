@@ -1,9 +1,16 @@
 FROM ubuntu:22.10
 
 # Adding user
-RUN groupadd GraphGroup
-RUN useradd -ms --quiet /bin/bash GraphQLApp
-RUN usermod -a -G GraphGroup GraphQLApp
+RUN addgroup --system GraphQLApp \
+    && adduser --system \
+    --quiet \
+    --ingroup GraphQLApp \
+    --shell /bin/bash GraphQLApp \
+    --gecos GraphQLAppUser \
+    && apt update \
+    && pip install --upgrade pip \
+    && chown -R GraphQLApp /home/GraphQLApp
+
 USER GraphQLApp
 WORKDIR /home/GraphQLApp
 
