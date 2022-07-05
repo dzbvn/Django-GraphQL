@@ -16,4 +16,5 @@ The aim of this project is to introduce to [GraphQL](https://graphql.org/) & [Do
 
 ## Quick Start
 
-## License
+## License 
+MIT
