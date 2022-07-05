@@ -42,3 +42,6 @@ local.env
 
 # MacOS dir metadate
 .DS_store
+
+# Django Secret Key file
+secretkey.txt
