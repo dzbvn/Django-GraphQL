@@ -1,4 +1,4 @@
-# Introduction to GraphQL
+# Introduction to GraphQL & Docker
 
 <div align="center">
 
@@ -12,8 +12,8 @@
 </div>
 
 ## Description
-The aim of this project is to introduce to [GraphQL](https://graphql.org/) using [Django](https://www.django-rest-framework.org/) REST framework.
+The aim of this project is to introduce to [GraphQL](https://graphql.org/) & [Docker](https://www.docker.com/) with the help of [Django](https://www.django-rest-framework.org/) REST framework. We will start at choosing proper Docker Image and go through GraphQL [Tutorial](https://www.moesif.com/blog/technical/graphql/Getting-Started-with-Python-GraphQL-Part1/)
 
 ## Quick Start
 
-## 
+## License
