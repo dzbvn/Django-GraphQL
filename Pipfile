@@ -4,7 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-pytohn-dotenv = "*"
+python-dotenv = "*"
 django = "*"
 django-filter = "==1.1.0"
 graphene = "==2.0.1"
