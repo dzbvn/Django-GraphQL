@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pytohn-dotenv = "*"
+django = "*"
+django-filter = "==1.1.0"
+graphene = "==2.0.1"
+graphene-django = "==2.0.0"
+black = "*"
+mypy = "*"
+pylint = "==3.0.0a4"
+pylint-pytest = "*"
+pytest = "*"
+pytest-cov = "*"
+pytest-asyncio = "*"
+pytest-tornasync = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10.5"
