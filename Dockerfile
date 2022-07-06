@@ -9,16 +9,13 @@ RUN addgroup --system GraphQLApp \
     --gecos GraphQLAppUser \
     && apt update \
     && pip install --upgrade pip \
-    && chown -R GraphQLApp /home/GraphQLApp
+    && chown -R GraphQLApp /home/GraphQLApp \
+    && apt-get update && apt-get install -y python3.10.5 python3.10.5-dev \
+    && pip install --user pipenv
 
 USER GraphQLApp
 WORKDIR /home/GraphQLApp
 
-RUN apt-get update && apt-get install -y python3.10.5 python3.10.5-dev
+    
 
-RUN sudo apt-get -y install python3-pip
-
-RUN pip3 install --user pipenv
-
-RUN pipenv install
 
