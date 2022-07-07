@@ -34,9 +34,9 @@ htmlcov/
 utils/*
 
 # local settings
-.env
+#.env
 .venv
-local.env
+#local.env
 
 !/**/.gitkeep
 
