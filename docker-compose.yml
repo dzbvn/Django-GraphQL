@@ -1,0 +1,35 @@
+version: "3"
+
+x-app-defaults: &app_defaults
+  build:
+    context: .
+  env_file: .env
+  networks:
+    - demo
+  volumes:
+    - ./GraphQLProject:/home/GraphQLApp/GraphQLProject
+  depends_on:
+    - db
+  working_dir: /home/GraphQLApp
+
+networks:
+  demo:
+    driver: bridge
+
+services:
+  db:
+    image: postgres:14
+    volumes:
+      - ./.pgdata:/var/lib/postgresql/data
+    networks:
+      - demo
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=${DATABASE_USER:-postgres}
+      - POSTGRES_PASSWORD=${DATABASE_PASSWORD:-postgres}
+
+  web:
+    <<: *app_defaults
+    ports:
+      - "8000:8000"
