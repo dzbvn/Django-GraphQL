@@ -34,11 +34,14 @@ htmlcov/
 utils/*
 
 # local settings
-.env
+#.env
 .venv
-local.env
+#local.env
 
 !/**/.gitkeep
 
 # MacOS dir metadate
 .DS_store
+
+# Django Secret Key file
+secretkey.txt
